@@ -1,0 +1,159 @@
+[gd_scene load_steps=2 format=3 uid="uid://b70mg6oeja0wa"]
+
+[ext_resource type="Script" path="res://Node.gd" id="1_vi61j"]
+
+[node name="Node" type="Node" node_paths=PackedStringArray("CreateButton")]
+script = ExtResource("1_vi61j")
+CreateButton = NodePath("CreateButton")
+
+[node name="CreateButton" type="Button" parent="."]
+offset_left = 810.0
+offset_top = 524.0
+offset_right = 994.0
+offset_bottom = 625.0
+text = "Create Graph"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -421.0
+offset_bottom = -372.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit2" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit3" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit4" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit5" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit6" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit7" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit8" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit9" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit10" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit11" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit12" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 68.5
+offset_top = -448.0
+offset_right = -1032.5
+offset_bottom = -425.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "X Axis:"
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 68.5
+offset_top = -286.0
+offset_right = -1032.5
+offset_bottom = -263.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Y Axis:"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -254.0
+offset_bottom = -205.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="SpinBox2" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="SpinBox3" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="SpinBox4" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="SpinBox5" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="SpinBox6" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="SpinBox7" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="SpinBox8" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="SpinBox9" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="SpinBox10" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="SpinBox11" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="SpinBox12" type="SpinBox" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 999999.0
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 363.0
+offset_top = 114.0
+offset_right = 816.0
+offset_bottom = 145.0
+placeholder_text = "Graph Title..."
+alignment = 1
+
+[connection signal="pressed" from="CreateButton" to="." method="_on_create_button_pressed"]
+[connection signal="text_changed" from="LineEdit" to="." method="_on_line_edit_text_changed"]
